@@ -5,6 +5,8 @@ export enum EffectType {
 }
 
 export class EffectComponent extends BaseComponent {
+    public static readonly componentName = 'EffectComponent';
+    
     public type: EffectType;
     public duration: number;
     public elapsed: number = 0;

@@ -1,6 +1,8 @@
 import { BaseComponent } from '../BaseComponent';
 
 export class RotationComponent extends BaseComponent {
+    public static readonly componentName = 'RotationComponent';
+
     public rotation: number = 0;
     public rotationSpeed: number = 0;
 

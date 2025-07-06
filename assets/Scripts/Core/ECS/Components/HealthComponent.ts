@@ -2,6 +2,8 @@ import { BaseComponent } from '../BaseComponent';
 import { GameConstants } from '../../Constants/GameConstants';
 
 export class HealthComponent extends BaseComponent {
+    public static readonly componentName = 'HealthComponent';
+    
     public currentHealth: number;
     public maxHealth: number;
     public invulnerabilityTime: number = 0;

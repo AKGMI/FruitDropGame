@@ -9,6 +9,8 @@ export enum FruitType {
 }
 
 export class FruitComponent extends BaseComponent {
+    public static readonly componentName = 'FruitComponent';
+    
     public type: FruitType;
     public score: number;
 

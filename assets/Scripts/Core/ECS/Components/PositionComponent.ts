@@ -1,6 +1,8 @@
 import { BaseComponent } from '../BaseComponent';
 
 export class PositionComponent extends BaseComponent {
+    public static readonly componentName = 'PositionComponent';
+    
     public x: number = 0;
     public y: number = 0;
 

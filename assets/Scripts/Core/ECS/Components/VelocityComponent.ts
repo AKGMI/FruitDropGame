@@ -1,6 +1,8 @@
 import { BaseComponent } from '../BaseComponent';
 
 export class VelocityComponent extends BaseComponent {
+    public static readonly componentName = 'VelocityComponent';
+    
     public x: number = 0;
     public y: number = 0;
 

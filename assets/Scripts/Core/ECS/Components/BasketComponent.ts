@@ -2,6 +2,8 @@ import { BaseComponent } from '../BaseComponent';
 import { GameConstants } from '../../Constants/GameConstants';
 
 export class BasketComponent extends BaseComponent {
+    public static readonly componentName = 'BasketComponent';
+    
     public speed: number;
     public width: number;
 

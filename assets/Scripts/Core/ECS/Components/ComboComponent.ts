@@ -2,6 +2,8 @@ import { BaseComponent } from '../BaseComponent';
 import { GameConstants } from '../../Constants/GameConstants';
 
 export class ComboComponent extends BaseComponent {
+    public static readonly componentName = 'ComboComponent';
+
     public streak: number = 0;
     public multiplier: number = 1.0;
     public lastCollectTime: number = 0;

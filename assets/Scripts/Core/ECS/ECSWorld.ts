@@ -34,7 +34,13 @@ export class ECSWorld {
     }
 
     public addComponent<T>(entityId: number, component: T): void {
-        const typeName = component.constructor.name;
+        let typeName: string;
+        
+        if ((component as any).constructor.componentName) {
+            typeName = (component as any).constructor.componentName;
+        } else {
+            typeName = (component as any).constructor.name;
+        }
         
         if (!this.components.has(typeName)) {
             this.components.set(typeName, new Map());

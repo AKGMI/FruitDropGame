@@ -2,6 +2,8 @@ import { BaseComponent } from '../BaseComponent';
 import { GameConstants } from '../../Constants/GameConstants';
 
 export class LifetimeComponent extends BaseComponent {
+    public static readonly componentName = 'LifetimeComponent';
+
     public maxAge: number;
     public currentAge: number = 0;
 

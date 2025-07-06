@@ -7,6 +7,8 @@ export enum FallStrategyType {
 }
 
 export class FallStrategyComponent extends BaseComponent {
+    public static readonly componentName = 'FallStrategyComponent';
+
     public strategyType: FallStrategyType;
     public parameters: Map<string, any>;
 

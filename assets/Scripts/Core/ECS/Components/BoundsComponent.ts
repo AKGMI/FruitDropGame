@@ -1,6 +1,8 @@
 import { BaseComponent } from '../BaseComponent';
 
 export class BoundsComponent extends BaseComponent {
+    public static readonly componentName = 'BoundsComponent';
+    
     public width: number = 0;
     public height: number = 0;
 

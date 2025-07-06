@@ -21,6 +21,8 @@ export enum SoundType {
 }
 
 export class AudioComponent extends BaseComponent {
+    public static readonly componentName = 'AudioComponent';
+
     public soundType: SoundType;
     public volume: number = 1.0;
     public isLooped: boolean = false;

@@ -1,6 +1,8 @@
 import { BaseComponent } from '../BaseComponent';
 
 export class CollectibleComponent extends BaseComponent {
+    public static readonly componentName = 'CollectibleComponent';
+    
     public collected: boolean = false;
     public collectTime: number = 0;
 

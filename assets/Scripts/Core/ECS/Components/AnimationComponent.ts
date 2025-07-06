@@ -14,6 +14,8 @@ export enum AnimationType {
 }
 
 export class AnimationComponent extends BaseComponent {
+    public static readonly componentName = 'AnimationComponent';
+
     public type: AnimationType;
     public isPlaying: boolean = false;
     public isPaused: boolean = false;
