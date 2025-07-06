@@ -26,7 +26,6 @@ import { GameEvents } from '../Core/Constants/GameEvents';
 const { ccclass } = _decorator;
 
 export enum GameState {
-    MENU = 'menu',
     PLAYING = 'playing',
     PAUSED = 'paused',
     GAME_OVER = 'game_over'
@@ -38,7 +37,7 @@ export class GameManager extends Component {
     private scoreSystem: ScoreSystem;
     private healthSystem: HealthSystem;
     private audioSystem: AudioSystem;
-    private gameState: GameState = GameState.MENU;
+    private gameState: GameState = GameState.PLAYING;
     private gameTime: number = GameConstants.GAME_TIME;
     private currentTime: number = 0;
 

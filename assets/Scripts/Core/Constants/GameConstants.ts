@@ -27,7 +27,7 @@ export class GameConstants {
     public static readonly FRUIT_ROTATION_SPEED_MAX = 180;
 
     // Время и интервалы
-    public static readonly GAME_TIME = 5; // секунд
+    public static readonly GAME_TIME = 60; // секунд
     public static readonly FRUIT_SPAWN_RATE = 1.5; // секунд
     public static readonly FRUIT_LIFETIME = 30; // секунд
 
